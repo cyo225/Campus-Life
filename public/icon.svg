@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="50%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Subtle academic geometric background pattern -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+  <circle cx="256" cy="256" r="220" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2" />
+
+  <!-- Graduation Cap & Open Book Emblem -->
+  <g filter="url(#shadow)">
+    <!-- Mortarboard Diamond -->
+    <path d="M 256 128 L 416 198 L 256 268 L 96 198 Z" fill="#FFFFFF" />
+    <path d="M 256 142 L 396 202 L 256 262 L 116 202 Z" fill="#F8FAFC" opacity="0.9" />
+
+    <!-- Cap Under-arch -->
+    <path d="M 160 228 L 160 292 C 160 324, 352 324, 352 292 L 352 228 C 322 248, 190 248, 160 228 Z" fill="#E2E8F0" />
+
+    <!-- Tassel and Golden Accent -->
+    <path d="M 256 268 C 280 278, 380 286, 396 324" fill="none" stroke="url(#accentGrad)" stroke-width="8" stroke-linecap="round" />
+    <circle cx="396" cy="334" r="14" fill="url(#accentGrad)" />
+
+    <!-- Open Book Pages beneath -->
+    <path d="M 140 348 C 196 332, 244 344, 256 358 C 268 344, 316 332, 372 348 L 372 396 C 316 380, 268 392, 256 406 C 244 392, 196 380, 140 396 Z" fill="#FFFFFF" />
+    <path d="M 256 358 L 256 406" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Campus Life Text / Emblem Accent Star -->
+  <circle cx="256" cy="198" r="6" fill="#EA580C" />
+</svg>

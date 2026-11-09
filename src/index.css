@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* High-end Apple / Notion style neutral dark gray canvas */
+  html.dark body {
+    background-color: #121212;
+    color: #f4f4f5;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Apple/Notion Neutral Dark Palette Surfaces */
+.dark-surface {
+  background-color: #1c1c1e;
+  border-color: #2c2c2e;
+}
+
+.dark-surface-elevated {
+  background-color: #242426;
+  border-color: #38383a;
+}
+
+/* iOS Safe Area Utilities */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 16px);
+}

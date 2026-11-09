@@ -1,0 +1,6 @@
+{
+  "name": "Campus Life - 朝陽科技大學校園生活助手",
+  "description": "專為大學生設計的手機優先 PWA 校園生活整合平台，整合朝陽科技大學週課表排程、作業追蹤、考試倒數、校園資訊與快捷校務入口。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
